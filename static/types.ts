@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 interface INews {
   id: string;
   slug: string;
@@ -13,4 +15,11 @@ interface INewsDetailsPage {
   };
 }
 
-export type { INews, INewsDetailsPage };
+
+
+interface ArchiveLayoutProps {
+  archive: ReactNode;
+  latest: ReactNode;
+}
+
+export type { INews, INewsDetailsPage, ArchiveLayoutProps };
