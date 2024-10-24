@@ -15,11 +15,13 @@ interface INewsDetailsPage {
   };
 }
 
-
+interface NewsListProps {
+  news: INews[];
+}
 
 interface ArchiveLayoutProps {
   archive: ReactNode;
   latest: ReactNode;
 }
 
-export type { INews, INewsDetailsPage, ArchiveLayoutProps };
+export type { INews, INewsDetailsPage, ArchiveLayoutProps, NewsListProps };
